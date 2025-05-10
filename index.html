@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Sneakers - Product Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/images/favicon.png" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">SNEAKERHUB</h1>
+        <nav class="nav">
+          <a href="#">Shop</a>
+          <a href="#">Collections</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="cart-icon">🛒</div>
+      </div>
+    </header>
+
+    <main class="product-page container">
+      <div class="product-container">
+        <!-- Product Gallery Section -->
+        <section class="product-gallery">
+          <div class="main-image">
+            <img
+              src="assets/images/product1.jpg"
+              alt="Premium Sneakers"
+              id="mainImage"
+            />
+          </div>
+          <div class="thumbnails">
+            <div
+              class="thumbnail active"
+              data-image="assets/images/product1.jpg"
+            >
+              <img
+                src="assets/images/product1.jpg"
+                alt="Premium Sneakers - Front View"
+              />
+            </div>
+            <div class="thumbnail" data-image="assets/images/product2.jpg">
+              <img
+                src="assets/images/product2.jpg"
+                alt="Premium Sneakers - Side View"
+              />
+            </div>
+            <div class="thumbnail" data-image="assets/images/product3.jpg">
+              <img
+                src="assets/images/product3.jpg"
+                alt="Premium Sneakers - Back View"
+              />
+            </div>
+            <div class="thumbnail" data-image="assets/images/product4.jpg">
+              <img
+                src="assets/images/product4.jpg"
+                alt="Premium Sneakers - Detail View"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Product Details Section -->
+        <section class="product-details">
+          <h1 class="product-title">Premium Running Sneakers</h1>
+          <div class="product-price">$129.99</div>
+          <div class="product-rating">★★★★☆ (42 reviews)</div>
+
+          <!-- Color Variants -->
+          <div class="variant-section">
+            <h3>Color</h3>
+            <div class="color-swatches">
+              <div
+                class="color-swatch active"
+                data-color="black"
+                style="background-color: #000"
+              ></div>
+              <div
+                class="color-swatch"
+                data-color="blue"
+                style="background-color: #0066cc"
+              ></div>
+              <div
+                class="color-swatch"
+                data-color="red"
+                style="background-color: #cc0000"
+              ></div>
+              <div
+                class="color-swatch"
+                data-color="white"
+                style="background-color: #fff; border: 1px solid #ddd"
+              ></div>
+            </div>
+            <button class="compare-btn" id="compareBtn">Compare Colors</button>
+          </div>
+
+          <!-- Size Variants -->
+          <div class="variant-section">
+            <h3>
+              Size
+              <button class="size-chart-btn" id="sizeChartBtn">
+                Size Chart
+              </button>
+            </h3>
+            <div class="size-options">
+              <div class="size-option">US 7</div>
+              <div class="size-option">US 8</div>
+              <div class="size-option active">US 9</div>
+              <div class="size-option">US 10</div>
+              <div class="size-option">US 11</div>
+            </div>
+          </div>
+
+          <!-- Add to Cart -->
+          <div class="add-to-cart">
+            <div class="quantity-selector">
+              <button class="quantity-btn minus">-</button>
+              <input type="number" value="1" min="1" class="quantity-input" />
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+
+          <!-- Product Tabs -->
+          <div class="product-tabs">
+            <div class="tab-buttons">
+              <button class="tab-btn active" data-tab="description">
+                Description
+              </button>
+              <button class="tab-btn" data-tab="info">
+                Product Information
+              </button>
+              <button class="tab-btn" data-tab="shipping">
+                Shipping Details
+              </button>
+            </div>
+            <div class="tab-content active" id="description">
+              <p>
+                Our premium running sneakers are designed for maximum comfort
+                and performance. Featuring advanced cushioning technology and
+                breathable mesh upper, these shoes will keep you comfortable
+                through your longest runs.
+              </p>
+            </div>
+            <div class="tab-content" id="info">
+              <ul>
+                <li><strong>Material:</strong> Knit mesh upper, rubber sole</li>
+                <li><strong>Weight:</strong> 280g (per shoe)</li>
+                <li><strong>Drop:</strong> 8mm</li>
+                <li><strong>Best for:</strong> Road running, gym workouts</li>
+              </ul>
+            </div>
+            <div class="tab-content" id="shipping">
+              <ul>
+                <li><strong>Free shipping</strong> on all orders over $50</li>
+                <li><strong>Delivery time:</strong> 2-5 business days</li>
+                <li><strong>Returns:</strong> 30-day free returns</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Pair Well With Section -->
+      <section class="pair-well">
+        <h2>Pair Well With</h2>
+        <div class="pair-products">
+          <div class="pair-product">
+            <img src="assets/images/related1.jpg" alt="Running Socks" />
+            <h3>Performance Running Socks</h3>
+            <div class="price">$14.99</div>
+            <button class="add-to-cart-btn small">Add to Cart</button>
+          </div>
+          <div class="pair-product">
+            <img src="assets/images/related2.jpg" alt="Gym Bag" />
+            <h3>Compact Gym Bag</h3>
+            <div class="price">$29.99</div>
+            <button class="add-to-cart-btn small">Add to Cart</button>
+          </div>
+          <div class="pair-product">
+            <img src="assets/images/related3.jpg" alt="Water Bottle" />
+            <h3>Sports Water Bottle</h3>
+            <div class="price">$12.99</div>
+            <button class="add-to-cart-btn small">Add to Cart</button>
+          </div>
+          <div class="pair-product">
+            <img src="assets/images/related4.jpg" alt="Running Shorts" />
+            <h3>Breathable Running Shorts</h3>
+            <div class="price">$24.99</div>
+            <button class="add-to-cart-btn small">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Bundle Section -->
+      <section class="product-bundle">
+        <h2>Complete Your Running Kit</h2>
+        <div class="bundle-items">
+          <div class="bundle-item">
+            <img src="assets/images/product1.jpg" alt="Premium Sneakers" />
+            <div class="bundle-item-info">
+              <h3>Premium Running Sneakers</h3>
+              <div class="price">$129.99</div>
+            </div>
+          </div>
+          <div class="plus-sign">+</div>
+          <div class="bundle-item">
+            <img src="assets/images/related1.jpg" alt="Running Socks" />
+            <div class="bundle-item-info">
+              <h3>Performance Running Socks</h3>
+              <div class="price">$14.99</div>
+            </div>
+          </div>
+          <div class="plus-sign">+</div>
+          <div class="bundle-item">
+            <img src="assets/images/related4.jpg" alt="Running Shorts" />
+            <div class="bundle-item-info">
+              <h3>Breathable Running Shorts</h3>
+              <div class="price">$24.99</div>
+            </div>
+          </div>
+        </div>
+        <div class="bundle-total">
+          <div class="total-price">
+            Total: $169.97 <span class="savings">(Save $15.00)</span>
+          </div>
+          <button class="add-bundle-btn">Add Bundle to Cart</button>
+        </div>
+      </section>
+
+      <!-- Related Products Section -->
+      <section class="related-products">
+        <h2>You Might Also Like</h2>
+        <div class="related-grid">
+          <div class="product-card">
+            <div class="badge">New</div>
+            <img src="assets/images/related1.jpg" alt="Running Socks" />
+            <h3>Performance Running Socks</h3>
+            <div class="price">$14.99</div>
+          </div>
+          <div class="product-card">
+            <div class="badge">Popular</div>
+            <img src="assets/images/related2.jpg" alt="Gym Bag" />
+            <h3>Compact Gym Bag</h3>
+            <div class="price">$29.99</div>
+          </div>
+          <div class="product-card">
+            <img src="assets/images/related3.jpg" alt="Water Bottle" />
+            <h3>Sports Water Bottle</h3>
+            <div class="price">$12.99</div>
+          </div>
+          <div class="product-card">
+            <img src="assets/images/related4.jpg" alt="Running Shorts" />
+            <h3>Breathable Running Shorts</h3>
+            <div class="price">$24.99</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Size Chart Modal -->
+    <div class="modal" id="sizeChartModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Size Chart</h2>
+        <table class="size-chart-table">
+          <thead>
+            <tr>
+              <th>US Size</th>
+              <th>EU Size</th>
+              <th>UK Size</th>
+              <th>Foot Length (inches)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>7</td>
+              <td>40</td>
+              <td>6</td>
+              <td>9.6"</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>41</td>
+              <td>7</td>
+              <td>9.9"</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>42</td>
+              <td>8</td>
+              <td>10.3"</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>43</td>
+              <td>9</td>
+              <td>10.6"</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>44</td>
+              <td>10</td>
+              <td>10.9"</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Compare Colors Modal -->
+    <div class="modal" id="compareModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Compare Colors</h2>
+        <div class="compare-colors">
+          <div class="compare-color">
+            <div class="compare-swatch" style="background-color: #000"></div>
+            <p>Black</p>
+          </div>
+          <div class="compare-color">
+            <div class="compare-swatch" style="background-color: #0066cc"></div>
+            <p>Blue</p>
+          </div>
+          <div class="compare-color">
+            <div class="compare-swatch" style="background-color: #cc0000"></div>
+            <p>Red</p>
+          </div>
+          <div class="compare-color">
+            <div
+              class="compare-swatch"
+              style="background-color: #fff; border: 1px solid #ddd"
+            ></div>
+            <p>White</p>
+          </div>
+        </div>
+        <button class="select-colors-btn">Select Colors to Compare</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-section">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">New Arrivals</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Help</h3>
+          <ul>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Shipping Info</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Subscribe</h3>
+          <p>Get 10% off your first order</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Made By Nehal ❤️ All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
